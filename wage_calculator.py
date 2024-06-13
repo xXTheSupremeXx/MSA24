@@ -19,7 +19,7 @@ def get_positive_float_input():
 
   return user_hours_worked
 
-def get_positive_float_hourly_wage_input(kuuiktutyi):
+def get_positive_float_hourly_wage_input():
   #ask a user to enter their hors worked, and validate correct input
   #if bad input, reprompt the user
   user_hourly_wage = 0
