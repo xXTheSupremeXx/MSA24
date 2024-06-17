@@ -55,5 +55,8 @@ def main():
             start_index = dog_index + 1
             continue
     print(f'Number Of Dogs: {number_of_dogs}')
+    car_info = 'Ferrari, f-50, 2021, 500000, 4.8'
 
+    car_data = car_info.split(',')
+    print(car_data)
 main()
