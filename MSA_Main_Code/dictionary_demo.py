@@ -21,7 +21,12 @@ def main():
     for student in student_scores:
         print(f'{student}: {student_scores[student]}')
 
+    #Declare a car dictionary
     car = {'make': 'Ferrari', 'Model': "F-50", 'year': 2021, 'value': 500000, 'engine': 4.8}
 
+    #Get all the keys and values from the car dictionary
+    print('\n\n')
+    for key, value in car.items():
+        print(f'{key}: {value}')
 
 main()
