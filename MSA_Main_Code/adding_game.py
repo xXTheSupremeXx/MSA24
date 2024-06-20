@@ -50,4 +50,5 @@ def main():
                     print("WRONG!!!")
             except:
                 print('"WRONG!!!"')
+    print(correct_answers_gotten / number_of_questions * 100)
 main()
