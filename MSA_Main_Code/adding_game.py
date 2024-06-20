@@ -6,7 +6,7 @@ def difficult_option():
         if difficulty_level_input in [1, 2, 3]:
             return difficulty_level_input
         else:
-            print('INVALID ')
+            print('INVALID')
             continue
     
 def questions():
@@ -29,3 +29,25 @@ def generate_question(level):
         x = random.randint(100, 999)
         y = random.randint(100, 999)
     return x, y
+
+def main():
+    level = difficult_option()
+    number_of_questions = questions()
+    correct_answers_gotten = 0
+
+    for i in range(number_of_questions):
+        x, y = generate_question(level)
+        correction_answer = x + y
+  
+        for attempt in range(3):
+            try:
+                user_answer = int(input(f"{x} + {y} = "))
+                if user_answer == correction_answer:
+                    print("CORRECT!!!")
+                    correct_answers_gotten += 1
+                    break
+                else:
+                    print("WRONG!!!")
+            except:
+                print('"WRONG!!!"')
+main()
